@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+      <meta name="author" content="Dinushi" />
+      <title>Create Task</title>
+      <link rel="stylesheet" href="styles/navstyle.css">
+      <link rel="stylesheet" href="styles/createtask.css">
+  </head>
+  <body>
+    <!--nav-->
+    <div class="topnav">
+      <a href="php/logout.php">Log Out</a>       
+    </div>
+    <br>
+    <div class="form-center">
+    <form action="action_page.php" style="border:1px solid #ccc">
+      <div class="container">
+        <h1>New Task</h1>
+        
+        <div class="dropdown" id="task">
+            <label for="task"><b>TASK</b></label>
+              <select id="tasklist">
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+        <div>
+        <br>
+        <div class="dropdown" id="employee">
+              <label for="employee"><b>EMPLOYEE</b></label>
+                <select id="tasklist">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+        <div>
+        <br>
+        <label for="date">DATE:</label>
+        <input type="date" id="date" name="DATE"> <br>
+        <label>
+        <label for="time">TIME:</label>
+        <input type="time" id="time" name="TIME">
+        </label>
+        <br>
+        <label for="cmnt"><b>COMMENT</b></label>
+        <input type="text" placeholder="" name="" required> 
+        <br>
+        <form action="">
+        <input type="file" id="myFile" name="filename">
+        </form>
+        <div class="buttons">
+          <button type="submit" class="crtbtn">CREATE</button>
+        </div>
+      </div>
+    </form>
+    </div>
+  </body>
+</html>

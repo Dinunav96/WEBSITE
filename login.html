@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="author" content="Dinushi" />
+      <title>Log In</title>
+      <link rel="stylesheet" href="styles/navstyle.css">
+      <link rel="stylesheet" href="styles/login.css">
+      <script type="text/javascript" src="js/login.js"></script>
+    </head>
+    <body>
+      <!--nav-->
+        <div class="topnav">
+            <a  class="active" href="login.html">Log In</a>
+            <div class="dropdown">
+                <button class="dropbtn">Setting
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Account Setting</a>
+                  <a href="#">Privacy</a>
+                </div>
+              </div>
+            <a href="index.html">Home</a>         
+        </div>
+
+        <!--login-->
+            <h2>LOG IN</h2><br>    
+                <div class="login">    
+                <form id="f1" name ="f1" action="php/authentication.php" onsubmit="return validation()"method="POST">    
+                    <label><b>User Name     
+                    </b>    
+                    </label>    
+                    <input type="text" name="Uname" id="Uname" placeholder="Username">    
+                    <br><br>    
+                    <label><b>Password     
+                    </b>    
+                    </label>    
+                    <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+                    <br><br>    
+                    <input type="submit" id="btn" value="Log In Here">       
+                    <br><br>    
+                    <input type="checkbox" id="check">    
+                    <span>Remember me</span>    
+                    <br><br>       
+                </form>     
+            </div>
+    </body>
+</html>

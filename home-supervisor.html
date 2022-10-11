@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="author" content="Dinushi" />
+      <title>Home</title>
+      <link rel="stylesheet" href="styles/navstyle.css">
+      <link rel="stylesheet" href="styles/slider.css">
+      <link rel="stylesheet" href="styles/menu.css">
+      <script src="js/slider.js"></script>
+    </head>
+    <body>
+      <!--nav-->
+        <div class="topnav">
+          <a href="php/logout.php">Log Out</a>
+          <div class="dropdown">
+              <button class="dropbtn">Setting
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Account Setting</a>
+                <a href="#">Privacy</a>
+              </div>
+          </div>
+          <a class="active" href="home-supervisor.html">Home</a>         
+        </div>
+        <!--slide-->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img  src="images/slider1.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/slider2.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/slder3.jpg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+        </div>
+        <br>
+            
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+          <!--menu-->
+          <div id="grid">
+            <a href="contactus.html">
+                <div class="left">
+                    <input id="cntus" type="image" src="images/Contact us.jpg" />
+                </div>
+                </a>
+                <div>
+                </div>
+                <a href="aboutus.html">
+                <div class="right">
+                    <input id="abtus" type="image" src="images/About US.jpg" />
+                  </div></a>
+                  <div class="left">
+                    <input id="profile" type="image" src="images/profile.png" />
+                </div>
+                <a href="taskboard.html">
+                  <div class="middle">
+                    <input id="taskboard" type="image" src="images/task.png" />
+                  </div>
+                </a>
+                <a href="task.html">
+                  <div class="right">
+                    <input id="task" type="image" src="images/task.png" />
+                  </div>
+                </a>
+          </div>
+          
+          
+    </body>
+</html>
